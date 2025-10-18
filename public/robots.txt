@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: https://dynamicbnc.com.pk/sitemap.xml
