@@ -90,7 +90,7 @@ const ProjectsPageClient = () => {
                     <p className="text-text-secondary text-sm">{testimonial.role}</p>
                   </div>
                 </div>
-                <p className="text-text-secondary italic">"{testimonial.content}"</p>
+                <p className="text-text-secondary italic">{`"${testimonial.content}"`}</p>
               </Card>
             ))}
           </div>

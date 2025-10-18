@@ -74,7 +74,7 @@ const ImageSlider = () => {
     return () => {
       if (interval) clearInterval(interval);
     };
-  }, [isAutoPlaying, slides.length]);
+  }, [isAutoPlaying, nextSlide, slides.length]);
 
   return (
     <div className="relative h-[70vh] md:h-[80vh] overflow-hidden rounded-xl">

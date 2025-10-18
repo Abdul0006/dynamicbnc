@@ -20,7 +20,7 @@ export default function GlobalError({
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-background text-text-primary p-4">
       <h2 className="text-2xl font-bold mb-4">Something went wrong!</h2>
-      <p className="mb-6 text-text-secondary">We're sorry, but an unexpected error occurred.</p>
+      <p className="mb-6 text-text-secondary">{"We're sorry, but an unexpected error occurred."}</p>
       <div className="flex gap-4">
         <button
           onClick={() => router.push('/')}

@@ -54,7 +54,7 @@ const ContactPageClient = () => {
       } else {
         setSubmitMessage({ type: 'error', text: result.error || 'Failed to send message. Please try again.' });
       }
-    } catch (error) {
+    } catch (_error) { // eslint-disable-line @typescript-eslint/no-unused-vars
       setSubmitMessage({ type: 'error', text: 'An error occurred. Please try again.' });
     } finally {
       setIsSubmitting(false);

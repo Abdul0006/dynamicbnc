@@ -6,7 +6,28 @@ interface CardProps {
   shadow?: boolean;
 }
 
-const Card: React.FC<CardProps> = ({ 
+interface CardComponent extends React.FC<CardProps> {
+  Header: React.FC<CardHeaderProps>;
+  Body: React.FC<CardBodyProps>;
+  Footer: React.FC<CardFooterProps>;
+}
+
+interface CardHeaderProps {
+  children: React.ReactNode;
+  className?: string;
+}
+
+interface CardBodyProps {
+  children: React.ReactNode;
+  className?: string;
+}
+
+interface CardFooterProps {
+  children: React.ReactNode;
+  className?: string;
+}
+
+const Card: CardComponent = ({ 
   children, 
   className = '', 
   shadow = true 
@@ -22,11 +43,6 @@ const Card: React.FC<CardProps> = ({
   );
 };
 
-interface CardHeaderProps {
-  children: React.ReactNode;
-  className?: string;
-}
-
 const CardHeader: React.FC<CardHeaderProps> = ({ 
   children, 
   className = '' 
@@ -38,11 +54,6 @@ const CardHeader: React.FC<CardHeaderProps> = ({
   );
 };
 
-interface CardBodyProps {
-  children: React.ReactNode;
-  className?: string;
-}
-
 const CardBody: React.FC<CardBodyProps> = ({ 
   children, 
   className = '' 
@@ -53,11 +64,6 @@ const CardBody: React.FC<CardBodyProps> = ({
     </div>
   );
 };
-
-interface CardFooterProps {
-  children: React.ReactNode;
-  className?: string;
-}
 
 const CardFooter: React.FC<CardFooterProps> = ({ 
   children, 

@@ -3,7 +3,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Card from '@/components/ui/Card';
-import Button from '@/components/ui/Button';
 
 const AboutSection = () => {
   return (
