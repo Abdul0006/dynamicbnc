@@ -1,16 +1,4 @@
 {
   "version": 2,
-  "framework": "nextjs",
-  "settings": {
-    "nodeVersion": "20.x",
-    "buildCommand": "npm run build",
-    "devCommand": "npm run dev",
-    "installCommand": "npm install"
-  },
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ]
+  "framework": "nextjs"
 }
